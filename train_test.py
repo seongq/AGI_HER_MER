@@ -140,10 +140,10 @@ if __name__ == '__main__':
     assert (set(params.aux_classifier).issubset(set(params.modals)))  
 
     
-    # p.add_argument("--MKD", type=str2bool, required=True)
-    # p.add_argument("--MKD_modals", type=str, required=True, choices=('tv', 'ta', 'va', 'tva'))
-    # p.add_argument("--MKD_student_modals", type=str, required=True, choices=('tv', 'ta', 'va', 'tva'))    
-    # p.add_argument("--MULTITASK_MKD", type=str, required=True, choices=('tv', 'ta', 'va', 'tva'))
+    p.add_argument("--MKD", type=str2bool, required=True)
+    p.add_argument("--MKD_modals", type=str, required=True, choices=('tv', 'ta', 'va', 'tva'))
+    p.add_argument("--MKD_student_modals", type=str, required=True, choices=('tv', 'ta', 'va', 'tva'))    
+    p.add_argument("--MULTITASK_MKD", type=str, required=True, choices=('tv', 'ta', 'va', 'tva'))
 
     # get train data
     print("실행중임")
